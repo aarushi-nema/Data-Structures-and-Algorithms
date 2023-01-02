@@ -5,6 +5,9 @@
 # 4. Add a node at given index
 # 5. Get length of linked list
 # 6. Delete linked list
+# 7. Delete a node at a given index
+# 8. Find the index of a the given value
+# 9. Print linked list
 
 from node import Node
 
@@ -72,12 +75,26 @@ class LinkedList:
 
         itr.next=itr.next.next
 
-    # Find the index of a the given value
+    # Function to find the index of a the given value
     def findIndex(self,data):
-        pass
-
-    # Function to insert a node at the beginning (at head) of the linked list
+        itr=self.head
+        index=0
+        while itr:
+            if data == itr.data:
+                return index
+            index+=1
+        return -1
+    
+    # Function to print the linked list
     def printList(self):
-        pass
+        if self.head is None:
+            print("Linked list is empty")
+        else:
+            itr = self.head
+            linkedlist_string = ""
+            while itr:
+                linkedlist_string += str(itr.data) + "-->"
+                itr = itr.next    
+            print(linkedlist_string)
 
     
