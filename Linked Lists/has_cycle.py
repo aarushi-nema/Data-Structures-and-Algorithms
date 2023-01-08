@@ -1,3 +1,5 @@
+#This program finds if there is a loop in a linked list using the two pointer method
+
 from basic_operations import LinkedList
 
 def find_loop(linkedlist: LinkedList):

@@ -1,3 +1,5 @@
+#This program finds the nth node of the linked list form the beginning
+
 from basic_operations import LinkedList
 
 def find_nth_node(linkedlist: LinkedList, n):
