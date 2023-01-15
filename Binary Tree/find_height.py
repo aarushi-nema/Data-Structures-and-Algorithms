@@ -1,1 +1,0 @@
-#This program finds the height of a binary tree
