@@ -17,5 +17,5 @@ def inorderTraversal_recursive(root: Node):
         current = stack.pop()
         result.append(current)
         current = current.right
-        
-        
+
+    return result
